@@ -22,6 +22,7 @@ const LI = styled.li`
 `
 
 const Link = styled(NavLink)`
+  font-weight: bold;
   color: #333;
   text-decoration: none;
   &:hover:not(.active) {
