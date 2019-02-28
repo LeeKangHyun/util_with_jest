@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 
 import Header from './index'
 
@@ -9,7 +9,7 @@ describe('Header', () => {
     component = shallow(<Header />)
   })
 
-  // it('헤더 스냅샷', () => {
-  //   expect(component).toMatchSnapshot()
-  // })
+  it('헤더 스냅샷', () => {
+    expect(component).toMatchSnapshot()
+  })
 })

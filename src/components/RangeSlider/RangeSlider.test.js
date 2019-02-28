@@ -11,4 +11,8 @@ describe('RangeSlider', () => {
   test('렌더가 되나?', () => {
     component = mount(<RangeSlider />)
   })
+  
+  test('', () => {
+    expect(component).toMatchSnapshot()
+  })
 })
