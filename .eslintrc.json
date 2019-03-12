@@ -1,7 +1,22 @@
 {
-  "extends": ["airbnb", "prettier"],
+  "extends": ["react-app", "airbnb", "prettier"],
   "plugins": ["prettier"],
   "rules": {
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
     "prettier/prettier": ["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        "rootPathPrefix": "@",
+        "rootPathSuffix": "src"
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "serviceworker": true
   }
 }
