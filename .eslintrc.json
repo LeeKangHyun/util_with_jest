@@ -12,7 +12,8 @@
   },
   "settings": {
     "ecmascript": 6,
-    "jsx": true
+    "jsx": true,
+    "import/resolver": "babel-plugin-root-import"
   },
   "env": {
     "browser": true,

@@ -9,11 +9,11 @@ const Controller = Wrapper =>
         filters: this.initialFilter,
       }
     }
-    
+
     get initialFilter() {
       return {
         standardRegions: null,
-        
+
         convention: false, //웨딩홀/컨벤션
         hotel: false, // 호텔
         house: false, //하우스/야외/전통
@@ -38,20 +38,18 @@ const Controller = Wrapper =>
         isEnterprise: false, //사업자등록증 인증
       }
     }
-  
-    componentDidMount() {
-    
-    }
-  
+
+    componentDidMount() {}
+
     replaceHistory = () => {
       const { history } = this.props
       history.replace({
         search: `${qs.stringify({
           filters: JSON.stringify({}),
-        })}`
+        })}`,
       })
     }
-    
+
     render() {
       return <Wrapper {...this.state} {...this.props} />
     }
