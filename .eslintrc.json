@@ -1,22 +1,23 @@
 {
+  "parser": "babel-eslint",
   "extends": ["react-app", "airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["react", "jsx-a11y", "prettier"],
   "rules": {
     "react/prefer-stateless-function": 0,
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "import/prefer-default-export": 0,
     "prettier/prettier": ["error"]
   },
   "settings": {
-    "import/resolver": {
-      "babel-plugin-root-import": {
-        "rootPathPrefix": "@",
-        "rootPathSuffix": "src"
-      }
-    }
+    "ecmascript": 6,
+    "jsx": true
   },
   "env": {
     "browser": true,
-    "serviceworker": true
+    "serviceworker": true,
+    "node": true,
+    "es6": true
   }
 }

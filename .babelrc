@@ -1,0 +1,12 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathPrefix": "@",
+        "rootPathSuffix": "client"
+      }
+    ]
+  ]
+}
