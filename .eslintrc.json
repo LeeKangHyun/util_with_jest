@@ -3,6 +3,14 @@
   "extends": ["react-app", "plugin:jsx-a11y/recommended", "plugin:prettier/recommended"],
   "plugins": ["jsx-a11y", "prettier"],
   "rules": {
+    "arrow-body-style": "off",
+    "no-multiple-empty-lines": "error",
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": true
+      }
+    ],
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": [
       "error",
@@ -20,12 +28,17 @@
       }
     ],
     "no-console": "off",
+    "no-return-assign": 0,
+    "object-curly-newline": "off",
+    "padded-blocks": 0,
     "prettier/prettier": ["error"],
+    "react/display-name": 2,
     "react/forbid-prop-types": [2, { "forbid": ["any"] }],
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-closing-bracket-location": 0,
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    "semi": "off"
   },
   "settings": {
     "ecmascript": 6,
