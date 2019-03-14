@@ -7,11 +7,7 @@ import withController from '@/Controllers/Filter'
 import { changeFilter } from '@/redux/Actions/Filters'
 
 const Filter = ({ filters }) => {
-  return (
-    <pre>
-      {JSON.stringify(filters, null, 2)}
-    </pre>
-  )
+  return <pre>{JSON.stringify(filters, null, 2)}</pre>
 }
 
 export default compose(

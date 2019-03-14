@@ -6,7 +6,7 @@ import {
 
 const initialMain = {
   standardRegions: null,
-  
+
   convention: false, //웨딩홀/컨벤션
   hotel: false, // 호텔
   house: false, //하우스/야외/전통

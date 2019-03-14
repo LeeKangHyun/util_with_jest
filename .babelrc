@@ -2,10 +2,13 @@
   "presets": ["react-app"],
   "plugins": [
     [
-      "babel-plugin-root-import",
+      "styled-components"
+    ],
+    [
+      "root-import",
       {
         "rootPathPrefix": "@",
-        "rootPathSuffix": "client"
+        "rootPathSuffix": "src"
       }
     ]
   ]

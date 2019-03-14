@@ -1,6 +1,6 @@
 System.config({
-  "baseURL": "./",
-  "paths": {
-    "@/*": "src/*"
-  }
+  baseURL: './',
+  paths: {
+    '@/*': 'src/*',
+  },
 })
