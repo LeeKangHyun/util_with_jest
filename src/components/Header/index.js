@@ -48,6 +48,9 @@ export default () => {
         <LI>
           <Link to="/rangeslider">레인지슬라이더</Link>
         </LI>
+        <LI>
+          <Link to="/carousel">슬라이더</Link>
+        </LI>
       </UL>
     </Nav>
   )
