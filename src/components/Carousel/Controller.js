@@ -6,11 +6,15 @@ export default Component => function Carousel({...props}) {
 
   useEffect(() => {
     tns({
-      items: 3,
       container: sliderRef.current,
+      items: 3,
       center: true,
     })
   }, [props.children])
+  
+  useEffect(() => {
+  
+  }, [])
 
   return (
     <Component

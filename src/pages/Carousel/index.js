@@ -3,8 +3,20 @@ import { map } from 'lodash'
 import styled from 'styled-components'
 
 import Slider from '@/components/Carousel'
+import Swiper from './Components/Swiper'
 
 import withController from './Controller'
+
+const Card = styled.div`
+  display: inline-block;
+  vertical-align: middle;
+  width: 397px;
+  height: 508px;
+  border: 1px solid red;
+  & + & {
+    margin-left: 195px;
+  }
+`
 
 const H1 = styled.h1`
   font-size: 18px;
@@ -33,7 +45,14 @@ const Textarea = styled.textarea.attrs(() => ({
 const Carousel = ({ list }) => {
   return (
     <div>
-      <Slider>
+      <Swiper>
+        <Card><H1>1</H1></Card>
+        <Card><H1>2</H1></Card>
+        <Card><H1>3</H1></Card>
+        <Card><H1>4</H1></Card>
+        <Card><H1>5</H1></Card>
+      </Swiper>
+      {/*<Slider>
         {map(list, (item) => {
           return (
             <div key={item.id}>
@@ -47,7 +66,7 @@ const Carousel = ({ list }) => {
             </div>
           )
         })}
-      </Slider>
+      </Slider>*/}
     </div>
   )
 }
