@@ -4,7 +4,7 @@ import RangeSlider from '@/components/RangeSlider'
 
 import withController from './Controller'
 
-export default withController(({ value, onUpdateRange }) => {
+const RangeComponent = ({ value, onUpdateRange }) => {
   return (
     <div>
       range
@@ -12,4 +12,6 @@ export default withController(({ value, onUpdateRange }) => {
       {value.join(' ~ ')}
     </div>
   )
-})
+}
+
+export default withController(RangeComponent)

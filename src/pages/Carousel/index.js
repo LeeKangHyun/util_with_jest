@@ -22,6 +22,7 @@ const H1 = styled.h1`
   font-size: 18px;
   color: #222;
   line-height: 1.5em;
+  user-select: none;
   span {
     text-shadow: 1px 1px 2px aqua;
   }
