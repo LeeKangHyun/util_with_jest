@@ -10,6 +10,9 @@ const App = () => {
       {Utils.useHover()}
       {Utils.useWindowSize()}
       {Utils.useAnimation()}
+      {Utils.useOnClickOutside()}
+      {Utils.usePrevious()}
+      {Utils.useOnScreen()}
     </section>
   )
 }
