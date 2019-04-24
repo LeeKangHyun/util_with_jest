@@ -5,6 +5,12 @@ import useAnimation from './useAnimation'
 import useOnClickOutside from './useOnClickOutside'
 import usePrevious from './usePrevious'
 import useOnScreen from './useOnScreen'
+import useDebounce from './useDebounce'
+import useMemo from './useMemo'
+import useKeyPress from './useKeyPress'
+import useScript from './useScript'
+import useHistory from './useHistory'
+import useSpring from './useSpring'
 
 export default {
   useLocalStorage,
@@ -14,4 +20,10 @@ export default {
   useOnClickOutside,
   usePrevious,
   useOnScreen,
+  useDebounce,
+  useMemo,
+  useKeyPress,
+  useScript,
+  useHistory,
+  useSpring,
 }
