@@ -58,7 +58,7 @@ export default function App() {
             <Info />
             <div className="row">
               {cards.map((card) => (
-                <div className="column">
+                <div className="column" key={card.description}>
                   <Card>
                     <div className="card-title">{card.title}</div>
                     <div className="card-body">{card.description}</div>

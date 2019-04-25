@@ -1,0 +1,58 @@
+@mixin variable($variable, $property, $fallback) {
+  // Fallback for browsers that don't support css vars
+  #{$property}: $fallback;
+  #{$property}: var(--#{$variable});
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 100px;
+  text-align: center;
+}
+
+.theme-changer {
+  margin-top: 30px;
+  label {
+    margin: 0 12px;
+  }
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  @include variable(button-border, border, none);
+  @include variable(button-padding, padding, 1rem);
+  @include variable(button-border-radius, border-radius, 0);
+  @include variable(button-font-weight, font-weight, normal);
+  @include variable(button-font-size, font-size, 1.2rem);
+  @include variable(button-text-transform, text-transform, uppercase);
+
+  @include variable(button-color, color, #000);
+  @include variable(button-background, background, #fff);
+
+  &:hover {
+    @include variable(button-hover-border, border, none);
+    @include variable(button-hover-color, color, #000);
+    @include variable(button-hover-background, background, #efefef);
+    @include variable(button-hover-transform, transform, none);
+  }
+
+  &:active {
+    @include variable(button-active-border, border, none);
+    @include variable(button-active-color, color, #000);
+    @include variable(button-active-background, background, #ccc);
+    @include variable(button-active-transform, transform, none);
+  }
+
+  &:focus {
+    // Don't do this in production for accessibility reasons
+    outline: 0;
+  }
+}

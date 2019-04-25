@@ -11,6 +11,9 @@ import useKeyPress from './useKeyPress'
 import useScript from './useScript'
 import useHistory from './useHistory'
 import useSpring from './useSpring'
+import useTheme from './useTheme'
+import useLockBodyScroll from './useLockBodyScroll'
+import useEventListener from './useEventListener'
 
 export default {
   useLocalStorage,
@@ -26,4 +29,7 @@ export default {
   useScript,
   useHistory,
   useSpring,
+  useTheme,
+  useLockBodyScroll,
+  useEventListener,
 }
