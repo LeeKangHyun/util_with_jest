@@ -13,6 +13,7 @@ import Home from '@/pages/Home'
 import Filter from '@/pages/Filter'
 import RangeSlider from '@/pages/RangeSlider'
 import Carousel from '@/pages/Carousel'
+import Counter from '@/pages/Counter'
 
 /*const Home = lazy(() => import(/!* webpackChunkName: "lazy-home" *!/ '@/pages/Home'))
 const Filter = lazy(() => import(/!* webpackChunkName: "lazy-filter" *!/ '@/pages/Filter'))
@@ -31,6 +32,7 @@ const Routes = () => {
           <Route path="/filter" component={Filter} />
           <Route path="/rangeslider" component={RangeSlider} />
           <Route path="/carousel" component={Carousel} />
+          <Route path="/counter" component={Counter} />
           <Redirect to="/" />
         </Switch>
       </Suspense>

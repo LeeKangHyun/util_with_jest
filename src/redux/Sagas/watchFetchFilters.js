@@ -5,7 +5,7 @@ import {
   FILTER_CHANGE,
   FILTER_CHANGE_APPLY,
   FILTER_RESET,
-} from '@/redux/Actions'
+} from '@/redux/Actions/Filters'
 
 import { getFilters } from './selector'
 

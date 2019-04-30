@@ -43,6 +43,9 @@ export default () => {
           </Link>
         </LI>
         <LI>
+          <Link to="/counter">카운터</Link>
+        </LI>
+        <LI>
           <Link to="/filter">필터</Link>
         </LI>
         <LI>
