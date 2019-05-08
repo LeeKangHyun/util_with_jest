@@ -93,7 +93,13 @@
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "no-underscore-dangle": [
+        "error",
+        {"enforceInMothodNames": true}
+      ]
+    }
   },
   "browserslist": [
     ">0.2%",

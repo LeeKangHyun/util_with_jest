@@ -6,7 +6,7 @@ const App = () => {
   return (
     <section>
       <article>Home</article>
-      {Utils.useEventListener()}
+      {/*{Utils.useEventListener()}*/}
     </section>
   )
 }

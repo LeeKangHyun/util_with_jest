@@ -46,8 +46,11 @@ export default () => {
           <Link to="/counter">카운터</Link>
         </LI>
         <LI>
-          <Link to="/filter">필터</Link>
+          <Link to="/canvas">캔버스</Link>
         </LI>
+        {/*<LI>
+          <Link to="/filter">필터</Link>
+        </LI>*/}
         <LI>
           <Link to="/rangeslider">레인지슬라이더</Link>
         </LI>
